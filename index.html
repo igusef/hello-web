@@ -1,10 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>Hello</title>
+    <meta charset='utf-8'>
+    <title>Title</title>
+    <script>
+        function enlarge() {
+            const newElement = document.createElement('p')
+            newElement.innerHTML = 'Text'
+            // adding a new element at the end of the body
+            document.body.appendChild(newElement)
+        }
+        setTimeout(enlarge, 1000)
+        setTimeout(enlarge, 2000)
+        setTimeout(enlarge, 3000)
+    </script>
 </head>
-<body style="margin: 0; padding: 0">
-    <!-- <h5>Hello</h5> -->
+
+<body>
 </body>
+
 </html>
